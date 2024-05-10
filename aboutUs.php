@@ -117,8 +117,8 @@
                 <h1>VICKIE <br> BRYANT</h1>
                 <p>GENERAL DOCTOR</p>
 
-                <p>1 (800) 254 4512</p>
-                <div class="social-links">
+                <p id="number">1 (800) 254 4512</p>
+                <div class="social-links2">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -128,11 +128,11 @@
 
             <div class="card6">
                 <img src="./images/team-2-640x640-640x517.jpg" alt="">
-                <h1>VICKIE <br> BRYANT</h1>
-                <p>GENERAL DOCTOR</p>
+                <h1>GERALDINE <br> GRAHAM</h1>
+                <p>DENTAL SURGEON</p>
 
-                <p>1 (800) 254 4512</p>
-                <div class="social-links">
+                <p id="number">1 (800) 800 7000</p>
+                <div class="social-links2">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -142,11 +142,11 @@
 
             <div class="card6">
                 <img src="./images/team-3-640x640-640x517.jpg" alt="">
-                <h1>VICKIE <br> BRYANT</h1>
-                <p>GENERAL DOCTOR</p>
+                <h1>VALERIE <br> FARMERT</h1>
+                <p>COSMETIC SURGEON</p>
 
-                <p>1 (800) 254 4512</p>
-                <div class="social-links">
+                <p id="number">1 (800) 456 5484</p>
+                <div class="social-links2">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -156,11 +156,11 @@
 
             <div class="card6">
                 <img src="./images/team-4-640x640-640x517.jpg" alt="">
-                <h1>VICKIE <br> BRYANT</h1>
-                <p>GENERAL DOCTOR</p>
+                <h1>ELOISE <br> STEPHENS</h1>
+                <p>THERAPY</p>
 
-                <p>1 (800) 254 4512</p>
-                <div class="social-links">
+                <p id="number">1 (800) 800 7000</p>
+                <div class="social-links2">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -170,11 +170,11 @@
 
             <div class="card6">
                 <img src="./images/team-5-640x640-640x517.jpg" alt="">
-                <h1>VICKIE <br> BRYANT</h1>
+                <h1>ROBIN <br> RAMSEY</h1>
                 <p>GENERAL DOCTOR</p>
 
-                <p>1 (800) 254 4512</p>
-                <div class="social-links">
+                <p id="number">1 (800) 254 4512</p>
+                <div class="social-links2">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -184,17 +184,19 @@
 
             <div class="card6">
                 <img src="./images/team-6-640x640-640x517.jpg" alt="">
-                <h1>VICKIE <br> BRYANT</h1>
-                <p>GENERAL DOCTOR</p>
+                <h1>CLAUDIA <br> ORTIZ</h1>
+                <p>GYNECOLOGIST</p>
 
-                <p>1 (800) 254 4512</p>
-                <div class="social-links">
+                <p id="number">1 (800) 254 4512</p>
+                <div class="social-links2">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+
+            
         </div>
     </section>
 

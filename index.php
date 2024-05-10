@@ -113,51 +113,50 @@
     </header>
 
     <section class="section1">
-    <img src="./images/doctorSection.png" alt="">
+        <img src="./images/doctorSection.png" alt="">
 
-    <div class="Us">
-        <h1>What Makes Us Different</h1>
-        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of the moment.</p>
-    </div>
-
-    <div class="info">
-        <div class="row">
-            <div>
-                <img src="./images/icon-c1.png" alt="">
-                <h1>FREE <br>SALTATION</h1>
-            </div>
-
-            <div>
-                <img src="./images/icon-c2.png" alt="">
-                <h1>AFFORDABLE <br> PRICE</h1>
-            </div>
+        <div class="Us">
+            <h1>What Makes Us Different</h1>
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of the moment.</p>
         </div>
 
-        <div class="row">
-            <div>
-                <img src="./images/icon-c3.png" alt="">
-                <h1>QUALIFIED <br>DOCTORS</h1>
+        <div class="info">
+            <div class="row">
+                <div>
+                    <img src="./images/icon-c1.png" alt="">
+                    <h1>FREE <br>SALTATION</h1>
+                </div>
+
+                <div>
+                    <img src="./images/icon-c2.png" alt="">
+                    <h1>AFFORDABLE <br> PRICE</h1>
+                </div>
             </div>
 
-            <div>
-                <img src="./images/icon-c4.png" alt="">
-                <h1>PROFESSIONAL <br> STAFF</h1>
+            <div class="row">
+                <div>
+                    <img src="./images/icon-c3.png" alt="">
+                    <h1>QUALIFIED <br>DOCTORS</h1>
+                </div>
+
+                <div>
+                    <img src="./images/icon-c4.png" alt="">
+                    <h1>PROFESSIONAL <br> STAFF</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <img src="./images/icon-c5.png" alt="">
+                    <h1>24/7 <br>OPENED</h1>
+                </div>
+
+                <div>
+                    <img src="./images/icon-c6.png" alt="">
+                    <h1>~50000 HAPPY <br> CLIENTS</h1>
+                </div>
             </div>
         </div>
-
-        <div class="row">
-            <div>
-                <img src="./images/icon-c5.png" alt="">
-                <h1>24/7 <br>OPENED</h1>
-            </div>
-
-            <div>
-                <img src="./images/icon-c6.png" alt="">
-                <h1>~50000 HAPPY <br> CLIENTS</h1>
-            </div>
-        </div>
-    </div>
-
     </section>
 
     <section class="section2">

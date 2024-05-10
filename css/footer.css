@@ -1,0 +1,115 @@
+
+.upperF{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    background-color: #4E8DBD;
+    border-bottom: 1px solid white;
+}
+.white p{
+    color: white;
+}
+
+.upperF img{
+    width: 50%;
+}
+
+.midF{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    text-align: center;
+    gap: 50px;
+    background-color: #4E8DBD;
+}
+
+.slide h1{
+    color: white; 
+    font-size: 25px; 
+    font-family: Yantramanav,sans-serif; 
+    font-weight: 500; 
+    line-height: 25px; 
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+.slide a{
+    text-decoration: none;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    color: white; 
+    font-size: 14px; 
+    font-family: Arial; 
+    font-weight: 700; 
+    line-height: 22.40px; 
+    word-wrap: break-word;
+    transition: 0.6s;
+}
+
+.s1 a{
+    background-color: #5E99C5;
+    border: none;
+}
+
+.s1 a:hover{
+    background-color: white;
+    border: white;
+    color: #5E99C5;
+}
+
+.s2 a:hover{
+    background-color: white;
+    border: white;
+    color: #5E99C5;
+}
+
+.s3 a{
+    background-color: white;
+    color: #5E99C5;
+    border: none;
+}
+
+.s3 a:hover{
+    background-color: #5E99C5;
+    border: #5E99C5;
+    color: white;
+}
+
+.lowerF{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 50px;
+    background-color: #3B739D;
+}
+
+.lowerF p{
+    color: white; 
+    font-size: 15px; 
+    font-family: Yantramanav,sans-serif; 
+    font-weight: 700; 
+    line-height: 32.35px; 
+    word-wrap: break-word;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .social-links a:hover {
+    color: #24262b;
+    
+  }

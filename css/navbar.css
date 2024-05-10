@@ -113,3 +113,29 @@ body{
 .reg a:hover{
     color: white;
 }
+
+.bottomNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #E5F4FF;
+}
+
+.bottomNav a{
+    color: #88ADB9; 
+    font-size: 24px; 
+    font-family: Yantramanav, sans-serif; 
+    font-weight: 700; 
+    word-wrap: break-word;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.bottomNav p{
+    color: #3D6889; 
+    font-size: 24px; 
+    font-family: Yantramanav, sans-serif; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}

@@ -1,0 +1,41 @@
+section{
+    padding: 100px;
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    gap: 50px;
+}
+
+.container h1{
+    color: #3D6889; 
+    font-size: 25px; 
+    font-family: Yantramanav,sans-serif; 
+    font-weight: 700; 
+    line-height: 35px; 
+    word-wrap: break-word;
+    
+}
+
+.container p{
+    text-align: center; 
+    color: #88ADB9; 
+    font-size: 15px; 
+    font-family: Arial; 
+    font-weight: 700; 
+    padding: 10px;
+    word-wrap: break-word;
+    
+}
+
+.card{
+    padding: 10px;
+    background-color: white;
+}

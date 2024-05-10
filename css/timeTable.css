@@ -1,0 +1,67 @@
+section{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+.container{
+    margin: auto;
+    display: flex;
+}
+
+table{
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #3D6889;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+table th{
+    background-color: #3D6889;
+    text-align: center; 
+    color: white; 
+    font-size: 10px; 
+    font-family: Arial; 
+    font-weight: 900; 
+    padding: 10px;
+    word-wrap: break-word;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.clock{
+    text-align: center; 
+    color: #3D6889; 
+    font-size: 15px; 
+    font-family: Arial; 
+    font-weight: 1000; 
+    padding: 10px;
+    word-wrap: break-word;
+    
+    
+}
+table td{
+    border: 1px solid #3D6889;
+    text-align: center; 
+    color: #88ADB9; 
+    font-size: 13px; 
+    font-family: Arial; 
+    font-weight: 700; 
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.even{
+    background-color: white;
+}
+.odd{
+    background-color: #F3F8F9;
+}

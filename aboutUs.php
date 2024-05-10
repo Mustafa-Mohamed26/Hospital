@@ -46,6 +46,11 @@
                     <p><a href="./logIn.php">Login</a> / <a href="./signUp.php">Sign Up</a></p>
                 </div>
             </div>
+
+            <div class="bottomNav">
+                <a href="./index.php">HOME PAGE</a>
+                <p> / ABOUT US</p>
+            </div>
         </nav>
     </header>
 

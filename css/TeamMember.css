@@ -1,0 +1,127 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    gap: 10px;
+    padding: 50px;
+}
+
+.card{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.card img{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.card h1{
+    color: #3D6889; 
+    font-size: 25px; 
+    font-family: Yantramanav, sans-serif; 
+    font-weight: 700; 
+    line-height: 27.50px; 
+    word-wrap: break-word;
+
+    margin-bottom: 10px;
+}
+
+.card p{
+    color: #88ADB9; 
+    font-size: 15px; 
+    font-family: Arial;
+    font-weight: 700; 
+    line-height: 17.60px;
+    word-wrap: break-word;
+    margin-top: 5px;
+}
+
+#number{
+    color: #88ADB9; 
+    font-size: 20px; 
+    font-family: Arial;
+    font-weight: 700; 
+    line-height: 17.60px;
+    word-wrap: break-word;
+    padding-bottom: 15px;
+    margin-top: 5px;
+    border-bottom: 1px #88ADB9 solid;
+}
+
+
+.social-links2 a {
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: #3D6889;
+    transition: all 0.5s ease;
+  }
+  
+  .social-links2 a:hover {
+    color: #88ADB9;
+    
+  }
+
+  #fav{
+    font-size: larger;
+    background-color: #3D6889;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .description p{
+    color: #88ADB9; 
+    font-size: 20px; 
+    font-family: Arial; 
+    font-weight: 700; 
+    line-height: 28px; 
+    word-wrap: break-word;
+    margin-bottom: 10px;
+  }
+
+  .description li, ul{
+    color: #3D6889; 
+    font-size: 20px; 
+    font-family: Arial; 
+    font-weight: 700; 
+    line-height: 25px; 
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .bio p{
+    background-color: #3D6889;
+    color: white;
+    width: 6%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+  }
+
+  .description h1{
+    color: #3D6889; 
+    font-size: 40px; 
+    font-family: Yantramanav,sans-serif; 
+    font-weight: 700; 
+    line-height: 27.50px; 
+    word-wrap: break-word;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }

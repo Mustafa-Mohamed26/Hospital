@@ -80,9 +80,9 @@
         <form action="">
             <div class="list">
                 <div class="menu">
-                    <label for="Department"> Select Department</label>
+                    <label for="Department"> Select Department</label><br>
                     <select name="Department">
-                        <option selected>Google
+                        <option>Google
                         <option>Yahoo
                         <option>Friend
                         <option>Other
@@ -90,9 +90,9 @@
                 </div>
 
                 <div class="menu">
-                    <label for="doctor"> Select Doctor</label>
+                    <label for="doctor"> Select Doctor</label><br>
                     <select name="doctor">
-                        <option selected>Google
+                        <option>Google
                         <option>Yahoo
                         <option>Friend
                         <option>Other
@@ -100,9 +100,9 @@
                 </div>
 
                 <div class="menu">
-                    <label for="scheduling"> Select Appointment scheduling</label>
+                    <label for="scheduling"> Select Appointment scheduling</label><br>
                     <select name="scheduling">
-                        <option selected>Google
+                        <option>Google
                         <option>Yahoo
                         <option>Friend
                         <option>Other
@@ -110,34 +110,46 @@
                 </div>
 
                 <div class="menu">
-                    <label for="date">Date of Appointment</label>
+                    <label for="date">Date of Appointment</label><br>
                     <input type="date">
                 </div>
             </div>
-
-            <textarea name="reasonA" id="reasonA">Appointment Reason</textarea>
-
+            <div class="textarea">
+            <label for="reasonA">Appointment Reason</label><br>
+                <textarea name="reasonA" id="reasonA"></textarea>
+            </div>
             <div class="payment">
                 <h1>payment</h1>
                 <p>Select Payment Method</p>
 
                 <div class="method">
                     <div class="money">
-                        <img src="" alt="">
-                        <input type="radio" id="method" name="card" value="Visa">
+                        <img src="./images/Visa.png" alt=""><br>
+                        <label class="radio">
+                            
+                            <input type="radio" id="method" name="card" value="Visa">
+                            <span></span>
+                        </label>
+                        
                     </div>
 
                     <div class="money">
-                        <img src="" alt="">
-                        <input type="radio" id="method" name="card" value="MasterCard">
+                        <img src="./images/MasterCard.png" alt=""><br>
+                        <label class="radio">
+                        
+                            <input type="radio" id="method" name="card" value="MasterCard">
+                            <span></span>
+                        </label>
+                        
                     </div>
                 </div>
 
                 <div class="price">
                     <p>Total price: </p>
                 </div>
-
-                <button type="submit" id="submit-btn">Make a Appointment</button>
+                <div class="button">
+                    <button type="submit" id="submit-btn">Make a Appointment</button>
+                </div>
             </div>
         </form>
     </section>

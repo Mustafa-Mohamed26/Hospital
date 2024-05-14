@@ -60,50 +60,90 @@
 
             <div class="container">
                 <div class="formContainer">
+
+                    <?php
+
+                        include(".\PHP\config.php");
+                        if(isset($_POST['submit'])){
+                            $username = $_POST['username'];
+                            $email = $_POST['email'];
+                            $address = $_POST['address'];
+                            $dateOfBirth = $_POST['dateOfBirth'];
+                            $mobile = $_POST['mobile'];
+                            $password = $_POST['password'];
+
+                            //verifying the unique email
+
+                            $verify_query = mysqli_query($con, "SELECT pEmail FROM patient WHERE pEmail = '$email'")or die("Erroe Occured");
+
+                            if(mysqli_num_rows($verify_query) !=0 ){
+                                echo "<div class='message'>
+                                          <p>This email is used, Try another One Please!</p>
+                                      </div> <br>";
+                                echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back</button>";
+                             }
+                             else{
+
+                                mysqli_query($con,"INSERT INTO patient (pName, pPassword, pEmail, pAddress, pMobileNumber, pDateOfBirth) VALUES ('$username', '$password', '$email', '$address', '$mobile', '$dateOfBirth')") or die("Erroe Occured");
+                    
+                                echo "<div class='message'>
+                                          <p>Registration successfully!</p>
+                                      </div> <br>";
+                                echo "<a href='login.php'><button class='btn'>Login Now</button>";
+                             
+                    
+                             }
+                    
+                             }else{
+                        
+                    ?>
+
                     <h2>Sign Up</h2>
-                    <form id="form" action="index.php" method="Post">
+                    <form id="form" action="" method="Post">
         
                         <div class="inputContainer">
-                            <input type="text" placeholder="User Name" id="userName" name="username">
+                            <input type="text" placeholder="User Name" id="userName" name="username" required>
                             <span class="error-message" id="nameError"></span>
                         </div>
         
                         <div class="inputContainer">
-                            <input type="text" placeholder="Email" id="email" name="email">
+                            <input type="text" placeholder="Email" id="email" name="email" required>
                             <span class="error-message" id="emailError"></span>
                         </div>
 
                         <div class="inputContainer">
-                            <input type="text" placeholder="address" id="address" name="address">
+                            <input type="text" placeholder="address" id="address" name="address" required>
                             <span class="error-message" id="addressError"></span>
                         </div>
 
                         <div class="inputContainer">
-                            <input type="date" placeholder="Date of Birth" id="dateOfBirth" name="dateOfBirth">
+                            <input type="date" placeholder="Date of Birth" id="dateOfBirth" name="dateOfBirth" required>
                             <span class="error-message" id="dateError"></span>
                         </div>
 
                         <div class="inputContainer">
-                            <input type="number" placeholder="Mobile Number" id="mobile" name="mobile">
+                            <input type="number" placeholder="Mobile Number" id="mobile" name="mobile" required>
                             <span class="error-message" id="phoneError"></span>
                         </div>
         
                         <div class="inputContainer">
-                            <input type="password" placeholder="Password" id="password" name="password">
+                            <input type="password" placeholder="Password" id="password" name="password" required>
                             <span class="error-message" id="errorPassword1"></span>
                         </div>
         
                         <div class="inputContainer">
-                            <input type="password" placeholder="Confirmation Password" id="conf">
+                            <input type="password" placeholder="Confirmation Password" id="conf" required>
                             <span class="error-message" id="errorPassword2"></span> 
                         </div>
         
-                        <button type="submit" id="submit-btn">Sign Up</button>
+                        <button type="submit" name="submit" id="submit-btn">Sign Up</button>
                         <div class="links">
                             <a href="./logIn.php">have an account? </a>
                         </div>
                     </form>
+                    
                 </div>
+                <?php }?>
             </div>
 
         </div>

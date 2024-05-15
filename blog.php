@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="img">
-                        <a href="./index.php"><img src="./images/logo.png" alt="logo"></a>
+                        <a href="./home.php"><img src="./images/logo.png" alt="logo"></a>
                     </div>
 
                     <div class="title right">
@@ -34,7 +34,7 @@
 
                 <div class="midNav">
                     <ul>
-                        <li ><a href="./index.php">HOME</a></li>
+                        <li ><a href="./home.php">HOME</a></li>
                         <li ><a href="./aboutUs.php">ABOUT US</a></li>
                         <li ><a href="./Team.php">TEAM</a></li>
                         <li ><a href="./service.php">SERVICES</a></li>

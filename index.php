@@ -36,8 +36,41 @@
 
     <section>
         <div class="photo">
-            <img src="./images/logo.png" alt=""><br>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque vel illo impedit delectus atque labore maxime, ipsa veritatis, quis facilis. Reprehenderit mollitia molestias obcaecati reiciendis, enim rerum repudiandae necessitatibus!</p>
+            <img src="./images/logo.png" id="img1" alt=""><br>
+            <img src="./images/banner-two-bg.png" id="img2" alt="">
+        </div>
+
+        <div class="regist">
+            <h1>FOR A BETTER HEALTHY LIVE</h1>
+            <p>WE CARE ABOUT YOU</p>
+
+            <div class="button">
+                <a href="./signUp.php">SIGNUP</a>
+                <a href="./logIn.php">LOGIN</a>
+            </div>
+            
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="./images/service-icon-1.png" alt="">
+                <p>Best health care</p>
+            </div>
+
+            <div class="card">
+                <img src="./images/service-icon-2.png" alt="">
+                <p>All specialties</p>
+            </div>
+
+            <div class="card">
+                <img src="./images/service-icon-3.png" alt="">
+                <p>Best examination</p>
+            </div>
+
+            <div class="card">
+                <img src="./images/service-icon-4.png" alt="">
+                <p>Best Doctors</p>
+            </div>
         </div>
     </section>
     

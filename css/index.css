@@ -1,17 +1,111 @@
-section{
-    margin: auto;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+section {
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #3b739d;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .photo {
-    width: 50%;
-    align-items: center;
-    margin: auto;
+  width: 65%;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  border-radius: 75px;
 }
 
-p{
-    color: red;
+#img1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 35%;
+}
+
+.regist {
+  margin-top: 40px;
+}
+.regist h1 {
+  text-align: center;
+  color: white;
+  font-size: 54px;
+  font-family: Yantramanav, sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+}
+
+.regist p {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: Yantramanav, sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  word-wrap: break-word;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.button a {
+  background: white;
+  border-radius: 6px;
+  font-size: 32px;
+  font-family: Yantramanav, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #3b739d;
+  transition: 0.6s;
+}
+
+.button a:hover {
+  border: solid 1px white;
+  color: white;
+  background-color: #3b739d;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: auto;
+  gap: 10px;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 40px;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+}
+
+.card img {
+  margin-top: 30px;
+}
+
+.card p {
+  text-align: center;
+  color: #3b739d;
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 44px;
+  word-wrap: break-word;
+  padding: 30px;
 }

@@ -6,7 +6,7 @@
     <title>About Us</title>
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link
       rel="stylesheet"
       type="text/css"

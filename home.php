@@ -52,7 +52,6 @@
 
                 <div class="reg">
                     <?php 
-        
                         $id = $_SESSION['id'];
                         $query = mysqli_query($con,"SELECT*FROM patient WHERE patient_ID=$id");
 
@@ -61,11 +60,7 @@
                             $res_id = $result['patient_ID'];
                         }
 
-                        if($_SESSION['valid']){
-                            echo "<p></p><a href='profile.php?Id=$res_id'>$res_Uname</a></p>";
-                        }else{
-                            echo "<p><a href='./logIn.php'>Login</a> / <a href='./signUp.php'>Sign Up</a></p>";
-                        } 
+                        echo "<p></p><a href='profile.php?Id=$res_id'>$res_Uname</a></p>"; 
                     ?>
                 </div>
             </div>

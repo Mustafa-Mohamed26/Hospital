@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+
+<?php 
+   session_start();
+
+   include("PHP/config.php");
+   if(!isset($_SESSION['valid'])){
+    header("Location: index.php");
+   }
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,7 +51,17 @@
                 </ul>
 
                 <div class="reg">
-                    <p><a href="./logIn.php">Login</a> / <a href="./signUp.php">Sign Up</a></p>
+                    <?php 
+                        $id = $_SESSION['id'];
+                        $query = mysqli_query($con,"SELECT*FROM patient WHERE patient_ID=$id");
+
+                        while($result = mysqli_fetch_assoc($query)){
+                            $res_Uname = $result['pName'];
+                            $res_id = $result['patient_ID'];
+                        }
+
+                        echo "<p></p><a href='profile.php?Id=$res_id'>$res_Uname</a></p>"; 
+                    ?>
                 </div>
             </div>
 

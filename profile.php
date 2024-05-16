@@ -58,6 +58,9 @@
                         while($result = mysqli_fetch_assoc($query)){
                             $res_Uname = $result['pName'];
                             $res_id = $result['patient_ID'];
+                            $res_email = $result['pEmail'];
+                            $res_mobile = $result['pMobileNumber'];
+                            $res_address = $result['pAddress'];
                         }
 
                         echo "<p></p><a href='profile.php?Id=$res_id'>$res_Uname</a></p>"; 
@@ -78,11 +81,11 @@
         <div class="container1">
 
             <div class="details">
-                <p>ID:</p>
-                <p>NAME:</p>
-                <p>EMAIL:</p>
-                <p>MOBILE NUMBER:</p>
-                <p>ADDRESS:</p>
+                <p>ID: <?php echo $res_id ?></p>
+                <p>NAME: <?php echo $res_Uname ?></p>
+                <p>EMAIL: <?php echo $res_email ?></p>
+                <p>MOBILE NUMBER: <?php echo $res_mobile ?></p>
+                <p>ADDRESS: <?php echo $res_address ?></p>
             </div>
 
             <div class="logOut"><a href="php/logout.php"> <button class="btn">Log Out</button> </a></div>
@@ -93,27 +96,48 @@
     <section class="appointment">
 
         <h1>Appointment List</h1>
-        <div class="container2">
-            <div class="box">
-                <div class="left">
-                    <p>Appointment ID:</p>
-                    <p>Doctor Name:</p>
-                    <p>Specialist:</p>
-                </div>
-
-                <div class="right">
-                    <p>Date with doctor:</p>
-                    <p>Appointment Scheduling:</p>
-                    <p>Date of appointment:</p>
-                </div>
-            </div>
+            <?php
+                include("PHP/config.php");
+                $sql = "SELECT *
+                        FROM doctor, person, department, appointment,receipt
+                        WHERE doctor.person_ID = person.person_ID 
+                        AND doctor.depart_ID = department.depart_ID 
+                        AND appointment.doctor_ID = doctor.doctor_ID
+                        AND appointment.receipt_ID = receipt.receipt_ID
+                        AND patient_ID = $id";
+                $result = mysqli_query($con, $sql);
             
-            <div class="bottom">
-                <p>Appointment Reason:</p>
-            </div>
-        </div>
+                if(mysqli_num_rows($result) > 0){
+                    while($row = mysqli_fetch_assoc($result)){
+                        echo "<div class='container2'>";
 
-        
+                        echo "<div class='box'>";
+
+                        echo "<div class='left'>";
+                        echo "<p> Appointment ID: ". $row['appointment_ID'] ."</p>";
+                        echo "<p> Doctor Name: ". $row['pName'] ."</p>";
+                        echo "<p> Specialist:". $row['dName'] ."</p>";
+                        echo "</div>";
+
+                        echo "<div class='right'>";
+                        echo "<p> Date with doctor: ". $row['aDate'] ."</p>";
+                        echo "<p> Appointment Scheduling: ". $row['aType'] ."</p>";
+                        echo "<p> Receipt: ". $row['rStatus'] ."</p>";
+                        echo "</div>";
+
+                        echo "</div>";
+
+                        echo "<div class='bottom'>";
+                        echo "<p> Appointment Reason: ". $row['aReason'] ."</p>";
+                        echo "</div>";
+
+                        echo "</div>";
+
+                        echo "<br>";
+
+                    };
+                }
+            ?> 
     </section>
 
     <footer>

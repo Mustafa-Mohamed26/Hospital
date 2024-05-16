@@ -72,6 +72,29 @@
         </nav>
     </header>
 
+    <?php
+        include(".\PHP\config.php");
+        if(isset($_POST['submit'])){
+            $reason = $_POST['reasonA'];
+            $doctorID = $_POST['doctor'];
+            $date = $_POST['date'];
+            $type = $_POST['scheduling'];
+
+            $method = $_POST['card'];
+
+
+            mysqli_query($con,"INSERT INTO appointment (aReason, patient_ID, doctor_ID, aDate, receipt_ID, aType)
+                               VALUES ('$reason', '$id', '$doctorID', '$date', 5, '$type')")
+                               or die("Error Occurred");
+
+            mysqli_query($con,"INSERT INTO payment (pMethod, pAmount, patient_ID, receipt_ID)
+                               VALUES ('$method', 5 , '$id', 5)")
+                               or die("Error Occurred");
+
+            
+        }
+    ?>
+
     <section>  
         <h1>Appointment</h1> 
         <div class="container">
@@ -95,41 +118,61 @@
 
         </div>
 
-        <form action="">
+        <form action="" method="Post">
             <div class="list">
                 <div class="menu">
                     <label for="Department"> Select Department</label><br>
-                    <select name="Department">
-                        <option>Google
-                        <option>Yahoo
-                        <option>Friend
-                        <option>Other
-                    </select>
+                    <?php
+                        $sqlD = "SELECT depart_ID, dName FROM department";
+                        $resultD = mysqli_query($con, $sqlD);
+
+                        echo '<select name="Department">';
+
+                        while ($rowD = mysqli_fetch_assoc($resultD)){
+                            echo '<option value="' . $rowD['depart_ID'] . '">' . $rowD['dName'] . '</option>';
+                        }
+                        echo '</select>';
+
+                        
+                    ?>
                 </div>
 
                 <div class="menu">
                     <label for="doctor"> Select Doctor</label><br>
-                    <select name="doctor">
-                        <option>Google
-                        <option>Yahoo
-                        <option>Friend
-                        <option>Other
-                    </select>
+                    <?php
+
+                        
+                        
+                        $sqlD = "SELECT doctor.Doctor_ID, doctor.person_ID, person.person_ID, person.pName, doctor.depart_ID, department.dName
+                                 FROM doctor, person, department 
+                                 WHERE doctor.person_ID = person.person_ID 
+                                 AND doctor.depart_ID = department.depart_ID ";
+                        $resultD = mysqli_query($con, $sqlD);
+
+                        echo '<select name="doctor">';
+
+                        while ($rowD = mysqli_fetch_assoc($resultD)){
+                            echo '<option value="' . $rowD['Doctor_ID'] . '">' . $rowD['pName'] . "(" .$rowD['dName']. ")" .'</option>';
+                        }
+                        echo '</select>';
+
+                        
+                    ?>
+                    
                 </div>
 
                 <div class="menu">
                     <label for="scheduling"> Select Appointment scheduling</label><br>
                     <select name="scheduling">
-                        <option>Google
-                        <option>Yahoo
-                        <option>Friend
-                        <option>Other
+                        <option value="In clinic">In clinic</option>
+                        <option value="Home care">Home care</option>
+                        <option value="Online consultation">Online consultation</option>
                     </select>
                 </div>
 
                 <div class="menu">
                     <label for="date">Date of Appointment</label><br>
-                    <input type="date">
+                    <input type="date" name="date">
                 </div>
             </div>
             <div class="textarea">
@@ -163,14 +206,16 @@
                 </div>
 
                 <div class="price">
-                    <p>Total price: </p>
+                    <p>Total price: $5</p>
                 </div>
                 <div class="button">
-                    <button type="submit" id="submit-btn">Make a Appointment</button>
+                    <button type="submit" name="submit" id="submit-btn">Make a Appointment</button>
                 </div>
             </div>
         </form>
     </section>
+
+    
     
     <footer>
         <div class="upperF">

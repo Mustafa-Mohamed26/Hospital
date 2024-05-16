@@ -55,28 +55,108 @@
         </header>
 
         <section>
-            <h1>Admin Side</h1>
-
+            <div class="title">
+                <h1>Admin Side</h1>
+            </div>
             <div class="container">
                 <div class="left">
+                    <h1>Users</h1>
+                    <?php
+                    include("PHP/config.php");
+                    $sql1 = "SELECT * FROM patient";
+                    $result1 = mysqli_query($con, $sql1);
 
-                    <div class="card">
+                    if(mysqli_num_rows($result1) > 0){
+                        while($row1 = mysqli_fetch_assoc($result1)){
+                            echo "<div class='card'>";
+                            echo "<p>patient_ID: ". $row1['patient_ID'] ."</p>";
+                            echo "<p>pName: ". $row1['pName'] ."</p>";
+                            echo "<p>pEmail: ". $row1['pEmail'] ."</p>";
+                            echo "<p>pAddress: ". $row1['pAddress'] ."</p>";
+                            echo "<p>pMobileNumber: ". $row1['pMobileNumber'] ."</p>";
+                            echo "<p>pDateOfBirth: ". $row1['pDateOfBirth'] ."</p>";
+                            echo "</div>";
+                        }
+                    }
+                    ?>
+                    
 
-                    </div>
+                    <h1>doctors</h1>
+                    <?php
+                    include("PHP/config.php");
+                    $sql2 = "SELECT * FROM doctor,person WHERE doctor.person_ID = person.person_ID";
+                    $result2 = mysqli_query($con, $sql2);
 
-                    <div class="card">
-                        
-                    </div>
+                    if(mysqli_num_rows($result2) > 0){
+                        while($row2 = mysqli_fetch_assoc($result2)){
+                            echo "<div class='card'>";
+                            echo "<p>doctor_ID: ". $row2['doctor_ID'] ."</p>";
+                            echo "<p>pName: ". $row2['pName'] ."</p>";
+                            echo "<p>depart_ID: ". $row2['depart_ID'] ."</p>";
+                            echo "<p>dSalary: ". $row2['dSalary'] ."</p>";
+                            echo "</div>";
+                        }
+                    }
+                    ?>
+
+                    <h1>departments</h1>
+                    <?php
+                    include("PHP/config.php");
+                    $sql3 = "SELECT * FROM department ";
+                    $result3 = mysqli_query($con, $sql3);
+
+                    if(mysqli_num_rows($result3) > 0){
+                        while($row3 = mysqli_fetch_assoc($result3)){
+                            echo "<div class='card'>";
+                            echo "<p>depart_ID: ". $row3['depart_ID'] ."</p>";
+                            echo "<p>dName: ". $row3['dName'] ."</p>";
+                            echo "</div>";
+                        }
+                    }
+                    ?>
 
                 </div>
                 <div class="right">
-                    <div class="card">
-                        
-                    </div>
+                    <h1>appointments</h1>
+                    <?php
+                        include("PHP/config.php");
+                        $sql4 = "SELECT * FROM appointment ";
+                        $result4 = mysqli_query($con, $sql4);
 
-                    <div class="card">
-                        
-                    </div>
+                        if(mysqli_num_rows($result4) > 0){
+                            while($row4 = mysqli_fetch_assoc($result4)){
+                                echo "<div class='card'>";
+                                echo "<p>appointment_ID: ". $row4['appointment_ID'] ."</p>";
+                                echo "<p>aReason: ". $row4['aReason'] ."</p>";
+                                echo "<p>patient_ID: ". $row4['patient_ID'] ."</p>";
+                                echo "<p>doctor_ID: ". $row4['doctor_ID'] ."</p>";
+                                echo "<p>aDate: ". $row4['aDate'] ."</p>";
+                                echo "<p>receipt_ID: ". $row4['receipt_ID'] ."</p>";
+                                echo "<p>aType: ". $row4['aType'] ."</p>";
+                                echo "</div>";
+                            }
+                        }
+                    ?>
+
+                    <h1>payments</h1>
+                    <?php
+                    include("PHP/config.php");
+                    $sql5 = "SELECT * FROM payment ";
+                    $result5 = mysqli_query($con, $sql5);
+
+                    if(mysqli_num_rows($result5) > 0){
+                        while($row5 = mysqli_fetch_assoc($result5)){
+                            echo "<div class='card'>";
+                            echo "<p>payment_ID: ". $row5['payment_ID'] ."</p>";
+                            echo "<p>pMethod: ". $row5['pMethod'] ."</p>";
+                            echo "<p>pAmount: ". $row5['pAmount'] ."</p>";
+                            echo "<p>pDate: ". $row5['pDate'] ."</p>";
+                            echo "<p>patient_ID: ". $row5['patient_ID'] ."</p>";
+                            echo "<p>receipt_ID: ". $row5['receipt_ID'] ."</p>";
+                            echo "</div>";
+                        }
+                    }
+                    ?>
                 </div>
             </div>
             

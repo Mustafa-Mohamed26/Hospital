@@ -1,0 +1,49 @@
+.title h1{
+    text-align: center;
+    color: #3D6889;
+    font-size: 64px;
+    font-family: Yantramanav,sans-serif;
+    font-weight: 700;
+    line-height: 27.50px;
+    word-wrap: break-word;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.container h1{
+    text-align: left;
+    color: red;
+    font-size: 32px;
+    font-family: Yantramanav,sans-serif;
+    font-weight: 700;
+    line-height: 27.50px;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.container p{
+    color: #3D6889; 
+    font-size: 25px;
+    font-family: Yantramanav,sans-serif;
+    font-weight: 700;
+    line-height: 27.50px;
+    word-wrap: break-word;
+    
+}
+
+.card{
+    border-bottom: 3px solid #3D6889;
+    width: 80%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto; 
+
+}
